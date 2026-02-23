@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms task</title>
+</head>
+   <style>
+    body{
+        margin:0 ;
+        background-image: url('/Assests/tailor\ bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    button{
+        border:none;
+        width: 100px;
+        padding:10px;
+        box-shadow: 2px 2px blue;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: blanchedalmond;
+    }
+    a{
+        text-decoration: none;
+        color:#36486b;
+        font-size: 15px;
+        font-weight:bold ;
+    }
+    button:hover{
+         background-color:black;
+         color:aqua;
+        box-shadow: 5px 5px white;
+    }
+    form{
+        margin-top:10px;
+        font-size:20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left:30px;
+        text-align:center;
+        padding: 10px;
+    }
+    div{
+        display: flex;
+        margin-left:200px;
+        width: 500px;
+        height:500px;
+        border:none;
+        box-shadow: 3px 3px 4px white;
+        margin-top:40px;
+        border-radius: 20px;
+        background-color:#bc5a45;
+    }
+    input{
+        border: none;
+        height: 30px;
+        width: 300px;
+        border-radius:10px;
+        margin-left: 20px;
+        font-size: medium;
+        text-align: center;
+    }
+    select{
+         border: none;
+        height: 30px;
+        width: 300px;
+        border-radius:10px;
+        margin-left: 20px;
+        font-size: medium;
+        text-align: center;
+    }
+    input:hover{
+        color: black;
+        box-shadow: 3px 3px black;
+    }
+    select:hover{
+        color: black;
+        box-shadow: 3px 3px black;
+    }
+    h2{
+        text-shadow: 2px 2px #f18973;
+        color:black;
+        font-style: italic;
+    }
+
+
+    
+   </style>
+<body>
+    <div>
+    <form><h2>Please fill this form</h2>
+        <label> Name: <input type="text" placeholder="enter your username"></label><br><br>
+         <label> Password : <input type="password" placeholder="enter your password"></label><br><br>
+        <label>  E-mail   : <input type="mail"  placeholder="enter your mail"></label><br><br>
+         <label> Age: <input type="number" placeholder="enter your age"></label><br><br>
+         <label> Gender: </label>
+            <select id="Gender" name="Gender-select">
+            <option value="">Select one...</option>
+           <option value="Male">Male</option>
+           <option value="Female">Female</option>
+            <option value="others">others</option></select><br><br>
+        <label>  place    : <input type="text" placeholder="enter your place"></label><br><br>
+        <button id="bubble"><a href="shop.html">login</a></button>
+    </form></div>
+    <script>
+        document.getElementById("bubble").addEventListener("click",
+            function(){
+                alert("moving to my page");
+            });
+    </script>
+</body>
+</html>
